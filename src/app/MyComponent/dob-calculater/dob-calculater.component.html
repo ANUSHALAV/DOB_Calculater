@@ -1,0 +1,65 @@
+<header>
+    <div class="text-center pt-2">
+        <h2>DOB Calculater</h2>
+    </div>
+</header>
+
+
+<main>
+    <div class="container-fluid">
+        <div class="row justify-content-center align-items-center height">
+            <div class="col-md-6 col-12 border border-4 border-primary h-auto p-4">
+                <form (ngSubmit)="calculatebtn()">
+                    <div class="mb-4">
+                        <label for="todayDate">Today Date</label>
+                        <input type="date" class="px-3 py-1 ms-5 w-50" name="todaydate" [(ngModel)]="todaydate">
+                        <p></p>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="dobDate">Date Of Birth</label>
+                        <input type="date" class="px-3 py-1 ms-4 w-50" name="dobdate" [(ngModel)]="dobdate">
+                    </div>
+
+                    <div class="mb-4 text-center">
+                        <button class="btn btn-primary">Calculate</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+
+
+<footer class="result">
+    <div class="container-fluid pb-5">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-6 col-12">
+                <div class="text-center text-uppercase mb-5">
+                    <h2>result</h2>
+                </div>
+
+                <div>
+                    <span class="fw-bold">Year&#160;:&#160;</span><span></span>
+                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                    <span class="fw-bold">Month&#160;:&#160;</span><span></span>
+                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                    <span class="fw-bold">weeks&#160;:&#160;</span><span></span>
+                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                    <span class="fw-bold">Days&#160;:&#160;</span><span></span>
+                </div>
+
+                <div class="pt-3">
+                    <span class="fw-bold">Hourse&#160;:&#160;</span><span></span>
+                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                    <span class="fw-bold">Minutes&#160;:&#160;</span><span></span>
+                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                    <span class="fw-bold">seconds&#160;:&#160;</span><span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
